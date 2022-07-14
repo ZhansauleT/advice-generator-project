@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.advice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  text-align: center;
+  width: 550px;
+  height: 350px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.advice-id,
+.advice-id-number {
+  margin-bottom: 60px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+}
+
+.advice-text {
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+}
+
+.advice-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.pattern-desktop {
+  margin-top: 40px;
+}
+
+.pattern-mobile {
+  display: none;
+}
+
+.dice {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -25px;
+  right: 275px;
+  transform: translateX(50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+}
+
+.dice:hover {
+  box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%),
+    0 0 80px hsl(150, 100%, 66%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .advice {
+    width: 350px;
+    height: 350px;
+  }
+
+  .advice-id,
+  .advice-id-number {
+    margin-bottom: 30px;
+  }
+
+  .advice-text {
+    font-size: 24px;
+  }
+
+  .pattern-desktop {
+    display: none;
+  }
+
+  .pattern-mobile {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .dice {
+    bottom: -25px;
+    right: 175px;
+    transform: translateX(50%);
+  }
+}
